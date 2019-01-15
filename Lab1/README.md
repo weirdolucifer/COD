@@ -1,15 +1,16 @@
 # Static and Dynamic Linking 
-//
+
 http://cs-fundamentals.com/c-programming/static-and-dynamic-linking-in-c.php
-//
+
 ```bash
 gcc -Wall -fPIC -c add.c
-gcc -Wall -fPIC -c sub.c // enables warnings for many common errors
+gcc -Wall -fPIC -c sub.c 
 ```
 
 ```bash
 gcc -shared -o libheymath.so add.o sub.o //creating shared library
 ```
+Wall enables warnings for many common errors.
 copy the library into one of the standard directories (/usr/lib) using nautilus
 ```bash
 ldconfig
