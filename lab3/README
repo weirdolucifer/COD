@@ -1,2 +1,15 @@
 Question7 :  Write a Program in Flex which identifies C Integers and float numbers. Your program should
 respond to various inputs as follows
+
+Question8: Write a program to eliminate the Left Recursion
+Sample Grammar 
+E -> E + T | T
+T -> T * F |F
+F -> (E) | id
+
+Sample output
+E -> TE’
+E’ -> +TE’ | Є
+T -> FT’
+T’ -> *FT’ | Є
+F -> (E) | id 
